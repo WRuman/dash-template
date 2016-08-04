@@ -12,9 +12,65 @@ body {
 #shell {
 	padding:1em;
 	display:flex;
+	flex-wrap:wrap;
 }
 
 h1 {
 	font-weight:normal;
+	margin:0;
 	text-transform:uppercase;
+}
+
+ul {
+	margin:0;
+	list-style-type:none;
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	flex: 1 100%;
+}
+
+.nav > h1 {
+	align-self:flex-start;
+}
+
+.nav > ul {
+	align-self:flex-end;
+	display:flex;
+}
+
+.nav > li {
+	display:block;
+}
+
+.box {
+	min-width:1em;
+	min-height:1em;
+	flex: 1 1 auto;
+}
+
+.red {
+	background-color: #FF5555;
+}
+
+.orange {
+	background-color: #FF9F39;
+}
+
+.yellow {
+	background-color: #FFD17C;
+}
+
+.pink {
+	background-color: #FF7E7E;
+}
+
+.teal {
+	background-color: #84C6C4;
+}
+
+.blue {
+	background-color: #DDFDF8;
 }
