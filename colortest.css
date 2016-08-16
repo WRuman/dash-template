@@ -1,12 +1,13 @@
 body {
 	font-family: sans-serif;
-	background-color: #322E3E;
+//	background-color: #322E3E;
+	background-color:#e2e2e2;
 	position:absolute;
 	top:0;
 	bottom:0;
 	left:0;
 	right:0;
-	color: #fff;
+	color: #2e2e2e;
 }
 
 #shell {
@@ -30,25 +31,40 @@ ul {
 	display: flex;
 	flex-direction: row;
 	flex: 1 100%;
+	align-items:center;
 }
 
 .nav > h1 {
 	align-self:flex-start;
+	flex: 1 1 auto;
 }
 
 .nav > ul {
-	align-self:flex-end;
 	display:flex;
+	justify-content:space-around;
+	flex: 1 1 auto;
+	align-items: flex-end;
 }
 
-.nav > li {
-	display:block;
+.nav > ul > li {
+	flex:1 1 auto;
+}
+
+.content {
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	padding:1em;
 }
 
 .box {
 	min-width:1em;
 	min-height:1em;
 	flex: 1 1 auto;
+}
+
+.white {
+	background-color: #FFF;
 }
 
 .red {
