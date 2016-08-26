@@ -1,6 +1,5 @@
 body {
-	font-family: sans-serif;
-//	background-color: #322E3E;
+	font-family: Arial, sans-serif;
 	background-color:#e2e2e2;
 	position:absolute;
 	top:0;
@@ -8,6 +7,8 @@ body {
 	left:0;
 	right:0;
 	color: #2e2e2e;
+	padding:0;
+	margin:0;
 }
 
 #shell {
@@ -17,6 +18,13 @@ body {
 }
 
 h1 {
+	font-weight:normal;
+	margin:0;
+	text-transform:uppercase;
+}
+
+
+h2 {
 	font-weight:normal;
 	margin:0;
 	text-transform:uppercase;
@@ -46,15 +54,22 @@ ul {
 	align-items: flex-end;
 }
 
-.nav > ul > li {
-	flex:1 1 auto;
-}
-
 .content {
 	display:flex;
 	flex-direction:row;
 	flex-wrap:wrap;
-	padding:1em;
+}
+
+.one-third-box {
+	min-width:1em;
+	min-height:1em;
+	flex: 1;
+}
+
+.two-third-box {
+	min-width:1em;
+	min-height:1em;
+	flex: 2;
 }
 
 .box {
