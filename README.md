@@ -1,4 +1,4 @@
-#Dashboard Template
+# Dashboard Template
 A web application template and html component set oriented towards
 making "dashboards" or other information summary displays.
 
